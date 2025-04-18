@@ -24,8 +24,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIh-1B-e9F">
                         <rect key="frame" x="2" y="0.0" width="56" height="87"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4:00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nd-IH-0q3">
-                                <rect key="frame" x="-2" y="0.0" width="60" height="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21:00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nd-IH-0q3">
+                                <rect key="frame" x="-6.6666666666666679" y="0.0" width="69.333333333333329" height="19"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -63,6 +63,11 @@
                 <constraint firstAttribute="bottom" secondItem="gIh-1B-e9F" secondAttribute="bottom" id="Xto-od-wZE"/>
             </constraints>
             <size key="customSize" width="60" height="87"/>
+            <connections>
+                <outlet property="tempLabel" destination="zNw-p5-h9Q" id="axh-Uf-scP"/>
+                <outlet property="timeLabel" destination="0nd-IH-0q3" id="Xgz-fL-vLj"/>
+                <outlet property="weatherIcon" destination="inb-rF-w00" id="tpc-qY-fh7"/>
+            </connections>
             <point key="canvasLocation" x="190.83969465648855" y="51.760563380281695"/>
         </collectionViewCell>
     </objects>

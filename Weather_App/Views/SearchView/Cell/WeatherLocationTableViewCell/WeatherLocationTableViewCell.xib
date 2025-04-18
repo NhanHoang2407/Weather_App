@@ -26,29 +26,23 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gl-ff-z5e" userLabel="Container">
                         <rect key="frame" x="0.0" y="10" width="393" height="159"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sunny" translatesAutoresizingMaskIntoConstraints="NO" id="6Dk-sp-poI">
-                                <rect key="frame" x="229" y="0.0" width="159" height="159"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="6Dk-sp-poI" secondAttribute="height" multiplier="1:1" id="nyd-OF-AwO"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FLS-E9-2du" userLabel="InforContainer">
-                                <rect key="frame" x="24" y="24" width="200" height="121"/>
+                                <rect key="frame" x="24.000000000000007" y="24" width="114.66666666666669" height="121"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Toronto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQR-Hs-dOE">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Toronto" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQR-Hs-dOE" userLabel="LocationTitle">
+                                        <rect key="frame" x="0.0" y="0.0" width="114.66666666666667" height="24"/>
                                         <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Sunny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP1-Vu-bF3">
-                                        <rect key="frame" x="0.0" y="29" width="200" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Sunny" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP1-Vu-bF3" userLabel="WeatherDescription">
+                                        <rect key="frame" x="0.0" y="35" width="114.66666666666667" height="20"/>
                                         <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="24°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpf-Jg-1ob">
-                                        <rect key="frame" x="0.0" y="60" width="200" height="61"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="24°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpf-Jg-1ob" userLabel="Temp">
+                                        <rect key="frame" x="0.0" y="60" width="114.66666666666667" height="61"/>
                                         <fontDescription key="fontDescription" name="Roboto-ExtraBold" family="Roboto" pointSize="52"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -61,22 +55,39 @@
                                     <constraint firstItem="EP1-Vu-bF3" firstAttribute="leading" secondItem="FLS-E9-2du" secondAttribute="leading" id="Hjz-xq-kFo"/>
                                     <constraint firstItem="EP1-Vu-bF3" firstAttribute="top" secondItem="wQR-Hs-dOE" secondAttribute="bottom" constant="11" id="ScJ-Gy-xJ3"/>
                                     <constraint firstItem="dpf-Jg-1ob" firstAttribute="leading" secondItem="FLS-E9-2du" secondAttribute="leading" id="fwe-Bv-r2w"/>
-                                    <constraint firstItem="dpf-Jg-1ob" firstAttribute="top" secondItem="EP1-Vu-bF3" secondAttribute="bottom" constant="11" id="o7F-7g-Y2b"/>
+                                    <constraint firstItem="dpf-Jg-1ob" firstAttribute="top" secondItem="EP1-Vu-bF3" secondAttribute="bottom" constant="5" id="o7F-7g-Y2b"/>
                                     <constraint firstAttribute="trailing" secondItem="wQR-Hs-dOE" secondAttribute="trailing" id="sMq-56-s9z"/>
                                     <constraint firstAttribute="trailing" secondItem="dpf-Jg-1ob" secondAttribute="trailing" id="tkV-Ns-phg"/>
                                     <constraint firstAttribute="trailing" secondItem="EP1-Vu-bF3" secondAttribute="trailing" id="voi-te-gCM"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8d-ZO-eBo">
+                                <rect key="frame" x="171.66666666666663" y="0.0" width="206.33333333333337" height="159"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sunny" translatesAutoresizingMaskIntoConstraints="NO" id="TU9-8x-jRv" userLabel="WeatherIcon">
+                                        <rect key="frame" x="23.666666666666686" y="0.0" width="159" height="159"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="159" id="0Cb-6l-Qdc"/>
+                                            <constraint firstAttribute="width" secondItem="TU9-8x-jRv" secondAttribute="height" multiplier="1:1" id="IuE-Bh-Iik"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TU9-8x-jRv" firstAttribute="centerX" secondItem="G8d-ZO-eBo" secondAttribute="centerX" id="S1N-T9-HSa"/>
+                                    <constraint firstAttribute="bottom" secondItem="TU9-8x-jRv" secondAttribute="bottom" id="ioq-uy-rcd"/>
+                                    <constraint firstItem="TU9-8x-jRv" firstAttribute="top" secondItem="G8d-ZO-eBo" secondAttribute="top" id="nE1-6M-Y8u"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.92941176469999998" green="0.73725490199999999" blue="0.098039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="6Dk-sp-poI" secondAttribute="trailing" constant="5" id="8Zt-n6-jGy"/>
                             <constraint firstItem="FLS-E9-2du" firstAttribute="leading" secondItem="5gl-ff-z5e" secondAttribute="leading" constant="24" id="Bxa-Tl-TXD"/>
+                            <constraint firstItem="G8d-ZO-eBo" firstAttribute="top" secondItem="5gl-ff-z5e" secondAttribute="top" id="L87-e3-aWl"/>
+                            <constraint firstItem="G8d-ZO-eBo" firstAttribute="leading" secondItem="FLS-E9-2du" secondAttribute="trailing" constant="33" id="T4N-6q-OhT"/>
+                            <constraint firstAttribute="bottom" secondItem="G8d-ZO-eBo" secondAttribute="bottom" id="afk-Ey-noi"/>
                             <constraint firstAttribute="bottom" secondItem="FLS-E9-2du" secondAttribute="bottom" constant="14" id="fQr-jV-0l7"/>
+                            <constraint firstAttribute="trailing" secondItem="G8d-ZO-eBo" secondAttribute="trailing" constant="15" id="hJT-a7-MvL"/>
                             <constraint firstItem="FLS-E9-2du" firstAttribute="top" secondItem="5gl-ff-z5e" secondAttribute="top" constant="24" id="mfj-Mq-g5F"/>
-                            <constraint firstItem="6Dk-sp-poI" firstAttribute="top" secondItem="5gl-ff-z5e" secondAttribute="top" id="onq-45-xS9"/>
-                            <constraint firstAttribute="bottom" secondItem="6Dk-sp-poI" secondAttribute="bottom" id="xng-N7-TKl"/>
-                            <constraint firstItem="6Dk-sp-poI" firstAttribute="leading" secondItem="FLS-E9-2du" secondAttribute="trailing" constant="5" id="yod-WG-eNc"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -90,6 +101,10 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="contentContainer" destination="5gl-ff-z5e" id="IxR-JW-rdw"/>
+                <outlet property="locationCurrentTemp" destination="dpf-Jg-1ob" id="UGl-wH-b2p"/>
+                <outlet property="locationCurrentWeatherDescription" destination="EP1-Vu-bF3" id="ZnO-1K-pZN"/>
+                <outlet property="locationNameTitle" destination="wQR-Hs-dOE" id="A13-jL-nlH"/>
+                <outlet property="locationWeatherIcon" destination="TU9-8x-jRv" id="LtQ-aT-vD3"/>
             </connections>
             <point key="canvasLocation" x="286.25954198473283" y="66.549295774647888"/>
         </tableViewCell>
